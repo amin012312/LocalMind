@@ -1,0 +1,230 @@
+# LocalMind Configuration - LIVE-OFFLINE AI Assistant
+# All settings optimized for offline operation
+
+# Application Settings
+app:
+  name: "LocalMind"
+  version: "1.0.0"
+  mode: "offline"  # Always offline - core principle
+  debug: false
+  log_level: "INFO"
+
+# Model Configuration
+model:
+  # Primary model selection (auto-detected based on resources)
+  default_model: "auto"  # Options: auto, mistral-7b, llama-2-7b
+  
+  # Quantization settings for resource efficiency
+  quantization:
+    enabled: true
+    bits: 4  # 4-bit or 8-bit quantization
+    load_in_8bit: false
+    load_in_4bit: true
+    bnb_4bit_compute_dtype: "float16"
+    bnb_4bit_use_double_quant: true
+  
+  # Model loading optimization
+  loading:
+    device_map: "auto"
+    torch_dtype: "auto"
+    low_cpu_mem_usage: true
+    trust_remote_code: false  # Security: never trust remote code
+  
+  # Generation parameters
+  generation:
+    max_new_tokens: 512
+    temperature: 0.7
+    top_p: 0.9
+    top_k: 50
+    do_sample: true
+    repetition_penalty: 1.1
+
+# Resource Management
+resources:
+  # Automatic resource detection and optimization
+  auto_detect: true
+  
+  # Memory management
+  memory:
+    max_ram_usage_percent: 80
+    enable_cpu_offload: true
+    enable_disk_offload: false
+  
+  # CPU configuration
+  cpu:
+    max_threads: "auto"  # Auto-detect CPU cores
+    optimization_level: "balanced"  # conservative, balanced, aggressive
+  
+  # GPU settings (if available)
+  gpu:
+    enabled: true
+    memory_fraction: 0.8
+    device_id: 0
+
+# Knowledge Base Configuration
+knowledge:
+  # Vector database settings
+  vector_db:
+    type: "faiss"  # faiss, chroma
+    dimension: 384  # Embedding dimension
+    index_type: "IVF"
+    n_clusters: 100
+  
+  # Embedding model
+  embeddings:
+    model: "all-MiniLM-L6-v2"  # Lightweight sentence transformer
+    dimension: 384  # Embedding dimension
+    device: "cpu"  # Keep on CPU for stability
+    normalize: true
+  
+  # Retrieval settings
+  retrieval:
+    max_docs: 5
+    similarity_threshold: 0.7
+    rerank: true
+  
+  # Offline learning
+  learning:
+    enabled: true
+    safety_filter: true
+    max_feedback_per_session: 10
+    learning_rate: 0.001
+
+# Conversation Memory Settings
+memory:
+  max_history: 100  # Maximum conversation turns to remember
+  context_window: 5  # Number of recent turns to include in context
+  semantic_search: true  # Use vector search for conversation history
+  user_profiling: true  # Learn user preferences and patterns
+  persistence: true  # Save memory to disk
+  auto_cleanup: true  # Auto-clean old conversations
+  cleanup_days: 30  # Days after which to clean old conversations
+
+# Domain-Specific Settings
+domains:
+  education:
+    enabled: true
+    subjects: ["mathematics", "science", "languages", "history"]
+    difficulty_levels: ["elementary", "middle", "high_school", "university"]
+    languages: ["en", "es", "fr", "pt", "ar", "zh"]
+  
+  healthcare:
+    enabled: true
+    categories: ["first_aid", "preventive_care", "symptoms", "medication_info"]
+    disclaimer_required: true
+    emergency_redirect: true
+  
+  general:
+    enabled: true
+    max_context_length: 2048
+
+# Interface Configuration
+interface:
+  # CLI settings
+  cli:
+    theme: "rich"
+    colors: true
+    progress_bars: true
+    history_size: 1000
+  
+  # GUI settings  
+  gui:
+    theme: "modern"
+    window_size: [800, 600]
+    font_size: 12
+    enable_markdown: true
+
+# Security and Privacy
+security:
+  # Data encryption
+  encryption:
+    enabled: true
+    algorithm: "AES-256"
+    key_rotation_days: 30
+  
+  # Privacy protection
+  privacy:
+    anonymize_logs: true
+    data_retention_days: 30
+    local_only: true  # Never send data externally
+    delete_on_exit: false
+  
+  # Content filtering
+  content_filter:
+    enabled: true
+    strict_mode: true
+    blocked_categories: ["adult", "violence", "harmful", "illegal"]
+    custom_filters: []
+
+# Multilingual Support
+languages:
+  # Primary interface language
+  default: "en"
+  
+  # Supported languages for content
+  supported: ["en", "es", "fr", "pt", "ar", "zh", "hi", "sw"]
+  
+  # Language detection
+  auto_detect: true
+  confidence_threshold: 0.8
+
+# Logging and Monitoring
+logging:
+  # Log file settings
+  file_logging: true
+  log_directory: "logs"
+  max_file_size_mb: 10
+  backup_count: 5
+  
+  # Performance monitoring
+  performance_monitoring: true
+  resource_usage_logging: true
+  
+  # Privacy-compliant logging
+  log_user_queries: false  # Privacy: never log user queries
+  log_responses: false     # Privacy: never log AI responses
+  log_system_only: true    # Only log system events
+
+# Offline Operation Settings
+offline:
+  # Ensure complete offline operation
+  verify_offline_mode: true
+  block_network_requests: true
+  cache_everything: true
+  
+  # Fallback mechanisms
+  fallback_responses: true
+  offline_help_system: true
+  
+  # Update mechanisms (for manual updates only)
+  manual_updates_only: true
+  update_verification: true
+
+# Performance Optimization
+performance:
+  # Model optimization
+  compile_model: false  # May cause issues on some systems
+  use_flash_attention: false  # Conservative setting
+  gradient_checkpointing: true
+  
+  # Memory optimization
+  cleanup_frequency: "after_each_query"
+  garbage_collection: true
+  memory_mapping: true
+  
+  # Cache settings
+  cache:
+    enabled: true
+    max_size_mb: 1024
+    ttl_hours: 24
+
+# Development and Testing
+development:
+  # Debug settings
+  verbose_logging: false
+  profile_performance: false
+  save_intermediate_results: false
+  
+  # Testing
+  enable_test_mode: false
+  mock_external_calls: true

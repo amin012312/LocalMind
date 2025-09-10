@@ -1,0 +1,63 @@
+# Core dependencies for LocalMind - LIVE-OFFLINE AI Assistant
+# All packages must support offline operation
+
+# Model and ML Framework
+torch>=2.0.0
+transformers>=4.30.0
+accelerate>=0.20.0
+bitsandbytes>=0.41.0
+sentencepiece>=0.1.99
+
+# Vector Database and Embeddings
+faiss-cpu>=1.7.4
+chromadb>=0.3.29
+sentence-transformers>=2.2.2
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+scikit-learn>=1.3.0
+
+# Configuration and Storage
+pyyaml>=6.0
+sqlite3  # Built-in Python module
+pickle-mixin>=1.0.2
+
+# Interface Dependencies
+rich>=13.0.0  # Enhanced CLI
+typer>=0.9.0  # CLI framework
+tkinter  # Built-in Python module for GUI
+
+# Resource Management
+psutil>=5.9.0
+cpuinfo>=9.0.0
+GPUtil>=1.4.0
+
+# Security and Privacy
+cryptography>=41.0.0
+hashlib  # Built-in Python module
+
+# Utilities
+tqdm>=4.65.0
+logging  # Built-in Python module
+pathlib  # Built-in Python module
+json  # Built-in Python module
+
+# Optional: Medical and Educational Content Processing
+nltk>=3.8.1
+spacy>=3.6.0
+
+# Development and Testing (optional)
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
+
+# Quantization Support
+optimum>=1.12.0
+
+# Multilingual Support
+polyglot>=16.7.4
+langdetect>=1.0.9
+
+# Performance Monitoring
+memory-profiler>=0.61.0

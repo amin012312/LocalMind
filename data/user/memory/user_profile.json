@@ -1,0 +1,13 @@
+{
+  "preferred_domains": [
+    "general"
+  ],
+  "common_topics": [
+    "hello",
+    "mukesh",
+    "public",
+    "servant"
+  ],
+  "interaction_patterns": {},
+  "learning_preferences": {}
+}
